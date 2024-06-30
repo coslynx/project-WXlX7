@@ -1,0 +1,16 @@
+Here is the complete code for the file "discord-moderation-bot/logs/moderation_logs.txt":
+
+```python
+import logging
+
+def log_moderation_action(action, user_id, target_user_id):
+    logging.basicConfig(filename='discord-moderation-bot/logs/moderation_logs.txt', level=logging.INFO)
+    logging.info(f"Action: {action}, User ID: {user_id}, Target User ID: {target_user_id}")
+```
+
+Explanation:
+The code above defines a function `log_moderation_action()` that logs the details of a moderation action into the "discord-moderation-bot/logs/moderation_logs.txt" file. The function takes the parameters `action` (the type of moderation action), `user_id` (the ID of the user performing the action), and `target_user_id` (the ID of the user being targeted by the action).
+
+The `logging` module is used to configure the logger to write the logs to the specified file. The `basicConfig()` function sets up the logging configuration with the specified filename and logging level (INFO in this case). The `info()` method of the logger is then used to log the details of the moderation action, including the action type and the user IDs involved.
+
+Note: This code assumes that the "discord-moderation-bot/logs/moderation_logs.txt" file already exists and is writable by the application.
